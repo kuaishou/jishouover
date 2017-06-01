@@ -13,10 +13,9 @@
     border-radius: 15px;
 }
 .banner{
-    height: 384px;
+    height: 380px;
     width: 100%;
     background-color: #03adea;
-    margin-top: 30px;
 }
 
 .boo{
@@ -33,7 +32,7 @@
 .tuijian .jiamo{
     width: 844px;
     height: 44px;
-    margin: 100px auto 100px;
+    margin: 40px auto 0;
 }
 .tuijian .jiamo a{
     display: block;
@@ -48,7 +47,6 @@
     font-size: 14px;
     line-height: 44px;
     text-align: center;
-    margin: 40px auto 100px;
 }
 
 
@@ -63,7 +61,7 @@
 .tuijian .oneDay .day-Box{
     float: left;
     height: 264px;
-    width: 630px;
+    width: 660px;
 }
 
 .tuijian .oneDay .left{
@@ -85,7 +83,6 @@
 .tuijian .oneDay .right img{
     height: 126px;
     width: 192px;
-    margin-left: 10px;
 }
 .tuijian .oneDay .right .two{
     margin-top: 12px;
@@ -93,14 +90,14 @@
 
 .tuijian .oneDay .mid{
     height: 264px;
-    width: 360px;
+    width: 400px;
     float: left;
 }
 
 
 .tuijian .oneDay .day-News{
     float: left;
-    width: 460px;
+    width: 420px;
     height: 264px;
     margin-left: 26px;
     }
@@ -126,6 +123,7 @@
     color: #666666;
     font-size: 14px;
     line-height: 26px;
+    height: 80px;
 
 }
 .tuijian .oneDay .day-News a{
@@ -152,7 +150,7 @@
 .tuijian .twoDay .two-Box{
     float: left;
     height: 264px;
-    width: 416px;
+    width: 456px;
 }
 
 .tuijian .twoDay .two-left{
@@ -165,16 +163,16 @@
     padding: 50px 20px;
     background-color: #3c89b7;
 }
-.tuijian .twoDay .two-righ{
+.tuijian .twoDay .two-right{
     height: 264px;
-    width: 360px;
+    width: 400px;
     float: left;
 }
 
 
 .tuijian .twoDay .two-News{
     float: left;
-    width: 650px;
+    width: 630px;
     height: 264px;
     margin-left: 30px;
 }
@@ -200,6 +198,7 @@
     color: #666666;
     font-size: 14px;
     line-height: 26px;
+    height: 80px;
 
 }
 .tuijian .twoDay .two-News a{

@@ -9,8 +9,31 @@
 'use strict';
 
 window.onload=function(){
+    fun("nav","boox");
+    /*轮播*/
+    /*轮播*/
+    function width(obj){
+        var w
+        if(!!(window.attachEvent && !window.opera))
+        {
+            w = document.documentElement.clientWidth;
+        }else{
+            w = window.innerWidth;
+        }
+        var bgImg = document.getElementById(obj).getElementsByTagName('img')[0];
+        bgImg.width = w;
+    }
+    width("san");
+    width("san0");
+    var box =document.getElementById("box_news");
+    var ul =document.getElementById("ull");
+    var i=0;
+    setInterval(function () {
+        ul.style.top=-30*i+"px";
+        i>2 ? i=0 : i++;
+    },1500)
 
-        /*nav导航栏*/
+    /*nav导航栏*/
     function fun(obj,a) {
         var header=document.getElementById("header");
         var tegle = document.getElementById(obj);
@@ -27,12 +50,15 @@ window.onload=function(){
                 this.className = "bom";
                 lis[this.index].className = "dis-black";
             };
+            lis[i].index = i;
             lis[i].onmouseover = function () {
                 for (i = 0; i < lis.length; i++) {
                     lis[i].className = "";
+                    spns[i].className = "";
                 };
                 this.className = "dis-black";
-            }
+                spns[this.index].className = "bom";
+            };
             header.onmouseout = function () {
                 for (i = 0; i < lis.length; i++) {
                     lis[i].className = "";

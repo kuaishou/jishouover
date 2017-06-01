@@ -22,6 +22,7 @@
     <nav class="container" id="nav">
         <div class="logo"><a href="../../index.html"><img src="../../imgs/shouye/logotop.png" alt=""/></a></div>
         <div class="nav-tabs">
+            <a href="../../index.html">首页</a>
             <span>走进吉首</span>
             <span>畅玩吉首</span>
             <span>旅游服务</span>
@@ -50,7 +51,7 @@
             <!--畅玩吉首-->
             <div >
                 <ul>
-                    <li><a href="../tabtwo/jingqu.html">景区</a></li>
+                    <li><a href="../tabtwo/jingqu0.html">景区</a></li>
                     <li><a href="../tabtwo/meishi.html">美食</a></li>
                     <li><a href="../tabtwo/zhushu.html">住宿</a></li>
                     <li><a href="../tabtwo/yule.html">  娱乐</a></li>
@@ -67,6 +68,7 @@
                     <li><a href="../tabthree/tuijian.html">精品推荐</a></li>
                     <li> <a href="#">交通导航</a></li>
                     <li> <a href="../tabthree/youji.html">吉首游记</a></li>
+                    <li> <a href="../tabthree/zhixun.html">吉首资讯</a></li>
                 </ul>
                 <img src="../../img/raw_1493013183_23.png" alt=""/>
             </div>
@@ -80,7 +82,7 @@
                 </ul>
                 <ul>
                     <li><a href="#">天气   </a> </li>
-                    <li><a href="#">在线投诉</a></li>
+                    <li><a href="../tabfour/toushu.html">在线投诉</a></li>
                 </ul>
                 <img src="../../img/raw_1493013183_23.png" alt=""/>
             </div>
@@ -226,9 +228,9 @@
 
 
 <!-- 结尾 -->
-<footer class="jieshu">
+<footer class="jieshu  clearfix">
     <div class="container">
-        <div class="logo"><a href="#"><img src="../../img/raw_1493013183_39.png" alt=""></a></div>
+        <div class="logo"><a href="../../index.html"><img src="../../imgs/shouye/logotop.png" alt=""></a></div>
         <div class="footer_tel">
             <ul class="tel">
                 <h4>联系我们</h4>
@@ -242,49 +244,10 @@
                 <li>吉首旅游局</li>
             </ul>
         </div>
-        <div class="weixin"><a href="#"><img src="../../img/raw_1493013183_40.png" alt=""></a></div>
+        <div class="weixin"><a href="#"><img src="../../imgs/shouye/weixin.png" alt=""></a></div>
     </div>
 </footer>
 
 </body>
-<script src="js/main.js"></script>
-<script>
-    /*nav导航栏*/
-    function fun(obj,a) {
-        var header=document.getElementById("header")
-        var tegle = document.getElementById(obj);
-        var box = document.getElementById(a);
-        var spns = tegle.getElementsByTagName("span");
-        var lis = box.getElementsByTagName("div");
-        for (i = 0; i < spns.length; i++) {
-            spns[i].index = i;
-            spns[i].onmouseover = function () {
-                for (i = 0; i < spns.length; i++) {
-                    spns[i].className = "";
-                    lis[i].className = "";
-                }
-                ;
-                this.className = "bom";
-                console.log(this.index);
-                lis[this.index].className = "dis-black";
-            };
-            lis[i].onmouseover = function () {
-                for (i = 0; i < lis.length; i++) {
-                    lis[i].className = "";
-                };
-                this.className = "dis-black";
-            }
-            header.onmouseout = function () {
-                for (i = 0; i < lis.length; i++) {
-                    lis[i].className = "";
-                }
-            }
-        }
-    }
-    fun("nav","boox");
-
-    /*轮播*/
-
-</script>
-
+<script src="../../js/main.js"></script>
 </html>

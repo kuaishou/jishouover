@@ -72,7 +72,7 @@
 .meishi .jiamo{
     width: 844px;
     height: 44px;
-    margin: 40px auto 100px;
+    margin: 40px auto 0;
 }
 .meishi .jiamo a{
     display: block;
